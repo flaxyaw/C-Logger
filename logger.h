@@ -30,7 +30,7 @@ namespace logger {
 			prefix = "[!]";
 			break;
 		}
-		std::string final_string = prefix + msg;
+		std::string final_string = prefix + msg + "\n";
 		va_list args;
 		va_start(args, msg);
 		std::vprintf(final_string.c_str(), args);
